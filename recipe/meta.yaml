@@ -1,5 +1,5 @@
 {% set name = "sigima" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 856db8c102939f6cfedf85b77ebea2cd33c838d1224dc8140ed3c80ea41b5e0f
+  sha256: 699a45d7d084d5619477b520de1003012f5f4440933f1e9071dae224903907c3
 
 build:
   noarch: python
