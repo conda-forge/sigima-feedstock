@@ -1,5 +1,5 @@
 {% set name = "sigima" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4feae1e81e08e01e69193713f0d0d14718a531b23db984b346720e4be2dc8ea8
+  sha256: 0019d9877e87ab2936e8b68bda7a36f21695e510d9a167c655056dd6b632fddf
 
 build:
   noarch: python
@@ -23,12 +23,13 @@ requirements:
     - python >={{ python_min }}
     - guidata >=3.13
     - packaging >=21.3
-    - scipy >=1.10.1
-    - scikit-image >=0.19.2
-    - pandas >=1.4
-    - pywavelets >=1.2
+    - numpy >=1.22,<2.5
+    - scipy >=1.10.1,<1.17
+    - scikit-image >=0.19.2,<0.27
+    - pandas >=1.4,<3.0
+    - pywavelets >=1.2,<2.0
     - makefun >=1.13.1
-    - typing_extensions
+    - typing_extensions >=4.0
 
 test:
   imports:
