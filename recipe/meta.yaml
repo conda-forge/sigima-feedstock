@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -36,8 +36,10 @@ test:
     - sigima
   commands:
     - pip check
+    - pytest --collect-only --pyargs sigima.tests
   requires:
     - pip
+    - pytest
     - python {{ python_min }}
 
 about:
