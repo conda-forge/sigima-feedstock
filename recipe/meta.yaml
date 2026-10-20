@@ -1,5 +1,5 @@
 {% set name = "sigima" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f476fe98a86a99004e346354a4ffbb3313c116dd995d25bfa67eaeed51a26f3
+  sha256: 1799dd4738fdd6ccb067bcf0222a75f5d0ab097a55a07584c00e2d67a2fd0d4b
 
 build:
   noarch: python
