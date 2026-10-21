@@ -41,6 +41,7 @@ test:
   requires:
     - pip
     - pytest
+    - jsonschema >=4
     - python {{ python_min }}
 
 about:
