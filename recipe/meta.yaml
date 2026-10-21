@@ -21,11 +21,12 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - guidata >=3.13
+    - guidata >=3.16
     - packaging >=21.3
     - numpy >=1.22,<2.5
     - scipy >=1.10.1,<1.17
     - scikit-image >=0.19.2,<0.27
+    - imagecodecs >= 2024.12.30
     - pandas >=1.4,<3.1
     - pywavelets >=1.2,<2.0
     - makefun >=1.13.1
